@@ -1,0 +1,45 @@
+<div class="company-container">
+  <div class="options">
+    <button class="btn btn-outline-primary btn-custom-margin">Editar empresa</button>
+    <button class="btn btn-outline-primary btn-custom-margin">Gestao de filiais</button>
+    <button class="btn btn-outline-primary btn-custom-margin">Faixas salariais</button>
+    <button class="btn btn-outline-primary btn-custom-margin">Job Level</button>
+  </div>
+  <div class="company-info">
+    <div class="card-info">
+      <label for="" class="title">Nome da empresa</label>
+      <span class="info">{{ companyData.companyName }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">CNPJ da empresa</label>
+      <span class="info">{{ companyData.companyCNPJ }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">Nome do administrador</label>
+      <span class="info">{{ companyData.adminName }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">CPF administrador</label>
+      <span class="info">{{ companyData.cpf }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">E-mail</label>
+      <span class="info">{{ companyData.email }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">Telefone</label>
+      <span class="info">{{ companyData.cellPhone }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">CEP</label>
+      <span class="info">{{ companyData.cep }}</span>
+    </div>
+    <div class="card-info">
+      <label for="" class="title">Endereco</label>
+      <span class="info">
+        {{ companyData.address }}, {{ companyData.city }}, {{ companyData.state }}
+        Rua Exemplo exemplar Exemplificada, 444, Loja 35, Belo Horizpnte, Minas Gerais
+      </span>
+    </div>
+  </div>
+</div>

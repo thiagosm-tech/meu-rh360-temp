@@ -1,0 +1,14 @@
+.terms {
+  font-size: 12px;
+  display: flex;
+  margin: 8px 0;
+  flex-wrap: wrap;
+
+  .input-acept-terms {
+    margin-right: 5px;
+    border: 1px solid black;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+  }
+}

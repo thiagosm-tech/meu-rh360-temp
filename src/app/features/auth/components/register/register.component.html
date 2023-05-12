@@ -1,0 +1,66 @@
+<form class="w-100" action="submit" [formGroup]="formRegister">
+  <h6>Crie uma conta profissional</h6>
+  <span>Preencha seus dados para ter acesso</span>
+
+  <div class="form-group py-2 mt-4">
+    <label>Nome completo</label>
+    <input  class="form-control"
+            formControlName="name"
+            placeholder="Digite seu nome completo"
+            type="text">
+    <small class="text-danger" *ngIf="isInvalidField('name')">
+      Nome é obrigatório.
+    </small>
+  </div>
+
+  <div class="form-group py-2">
+    <label>E-mail</label>
+    <input  class="form-control"
+            formControlName="email"
+            placeholder="Digite seu e-mail cadastrado / ex:email@gmail.com"
+            type="email">
+    <small class="text-danger" *ngIf="isInvalidField('email')">
+      Email inválido.
+    </small>
+  </div>
+
+  <div class="form-group py-2">
+    <label>Senha</label>
+    <input  class="form-control"
+            formControlName="password"
+            placeholder="Digite uma senha forte"
+            type="password">
+    <small class="text-danger" *ngIf="isInvalidField('password')">
+      Senha é obrigatória e deve ter no mínimo 6 caracteres.
+    </small>
+  </div>
+
+  <div class="form-group py-2">
+    <label>confirmação de senha</label>
+    <input  class="form-control"
+            formControlName="passwordConfirm"
+            placeholder="Repita a senha"
+            type="password">
+    <small class="text-danger" *ngIf="isInvalidField('passwordConfirm')">
+      Confirmação de senha é obrigatória.
+    </small>
+    <small class="text-danger" *ngIf="isInvalidPasswordConfirmation()">
+      As senhas não coincidem.
+    </small>
+  </div>
+
+  <div class="terms">
+    <input  class="input-acept-terms"
+            formControlName="terms"
+            type="checkbox">
+    <small>
+      Eu aceito os <a href="http://">Termos de uso & Privacidade</a> e o
+      <a href="http://">Contrato de serviço</a>
+    </small>
+    <small class="text-danger w-100" *ngIf="isInvalidField('terms')">
+      Você deve aceitar os termos de uso para prosseguir.
+    </small>
+  </div>
+
+  <button class="w-100 btn btn-primary" (click)="registerUser()">Criar conta</button>
+</form>

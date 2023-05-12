@@ -1,0 +1,17 @@
+.welcome-container  {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  padding: 60px 100px;
+  justify-content: space-around;
+  align-items: center;
+
+  .welcome-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

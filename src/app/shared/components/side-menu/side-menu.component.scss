@@ -1,0 +1,67 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #102444;
+  color: white;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.logo {
+  width: 300px;
+  padding: 20px 30px;
+}
+
+.side-menu.collapsed {
+  width: 0;
+}
+
+.company-config {
+  height: 140px;
+  transition: height 0.3s;
+  display: block;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.company-config.company-config-collapsed {
+  height: 0;
+}
+
+// .menu-content {
+//   /* Estilos para o conteúdo do menu */
+// }
+
+.content-section {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.title-section {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 34px;
+}
+
+.options li{
+  width: 300px;
+  padding: 8px 60px;
+  position: relative;
+}
+
+.options li:hover {
+  background: #143878;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  left: 35px;
+  bottom: 13px;
+}

@@ -1,0 +1,18 @@
+<div class="user-registration-container">
+  <div class="registration-image-section">
+    <img src="../../../assets/registration-image.png" class="h-100" alt="">
+  </div>
+
+  <div class="user-registration-section">
+    <img class="logo-img" src="../../../assets/logo.png" alt="">
+
+    <div class="w-75">
+      <app-register (formValue)="dispatchCreateUser($event)"></app-register>
+    </div>
+
+    <div class="d-flex">
+      <small>Ja tem uma conta? <a href="http://">Entre</a></small>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="side-menu" [ngClass]="{ 'collapsed': isCollapsed }">
+  <div class="logo">
+    <img src="../../../../assets/logo-white.png" alt="">
+  </div>
+
+  <ul class="options">
+    <h6 class="title-section">empresa</h6>
+
+    <li>
+      <i class="fa-solid fa-building icon"></i>
+      Config. da empresa
+    </li>
+    <ng-container *ngIf="isHaveCompany">
+      <div>
+        <li>Minha empresa</li>
+        <li>Benefícios</li>
+        <li>Áreas</li>
+        <li>Cargos</li>
+        <li>Filiais</li>
+      </div>
+      <li>
+        <i class="fa-solid fa-table-columns icon"></i>
+        Config. de sistema
+      </li>
+
+      <h6 class="title-section">vagas</h6>
+
+      <li>
+        <i class="fa-solid fa-user-gear icon"></i>
+        Gestão de vagas
+      </li>
+
+      <h6 class="title-section">usuários</h6>
+
+      <li>
+        <i class="fa-solid fa-image-portrait icon"></i>
+        Meu Perfil
+      </li>
+      <li>
+        <i class="fa-solid fa-users icon"></i>
+        Todos os usuários
+      </li>
+    </ng-container>
+  </ul>
+</div>
+<!-- <button (click)="toggleCollapse()" style="position: absolute; right:0; top: 0;">Recollher</button> -->

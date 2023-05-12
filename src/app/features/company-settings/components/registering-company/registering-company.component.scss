@@ -1,0 +1,22 @@
+.registering-container {
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 35px;
+
+  .form-row {
+    width: 100%;
+    display: flex;
+  }
+
+  .registering-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .text-label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #4782cd;
+  }
+}

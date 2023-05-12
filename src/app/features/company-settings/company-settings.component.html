@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <app-side-menu (isHaveCompany)="!companyData"></app-side-menu>
+  <div>
+    <app-header></app-header>
+    <app-bread-crumb></app-bread-crumb>
+    <app-welcome [name]="name" *ngIf="!companyData" (startConfig)="startConfig()"></app-welcome>
+    <app-company *ngIf="companyData" [companyData]="companyData"></app-company>
+  </div>
+</div>
+
+<app-modal [modalOpen]="modalOpen">
+    <app-registering-company
+      (cancelForm)="closeModal()"
+      (saveForm)="getFormData($event)">
+    </app-registering-company>
+</app-modal>

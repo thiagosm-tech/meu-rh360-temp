@@ -1,0 +1,17 @@
+<div class="welcome-container">
+  <div class="welcome-message">
+    <h2>Olá, {{ name }}. Seja bem-vindo</h2>
+    <span class="my-4">
+      É necessário configurar a empresa matriz para <br>
+      visualizar todas as informações do sistema.
+    </span>
+    <button class="btn btn-primary align-self-stretch text-uppercase"
+            (click)="emitStartConfigEvent()">
+            iniciar configuração
+    </button>
+  </div>
+
+  <div>
+    <img src="../../../../../assets/welcome-image.png" alt="">
+  </div>
+</div>
